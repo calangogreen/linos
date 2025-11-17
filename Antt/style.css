@@ -7,29 +7,56 @@
     font-family: "Roboto", sans-serif;
 }
 
-.header {
+.contatos {
     display: flex;
     position: relative;
     align-items: center;
     justify-content: space-between;
     width: 100vw;
     height: 40px;
-    background-color: #0026ff;
-    padding: 0 2%;
+    margin: 12px 0;
+    background-color: #ffffff;
+    padding: 0 10%;
+}
+
+.link {
+    display: flex;
+    gap: 20px;
+}
+
+.email:hover {
+    cursor: pointer;
+    color: aqua;
+}
+
+.numero:hover {
+    cursor: pointer;
+    color: aqua;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 50%;
+    border: #000000 solid 1px;
+}
+
+.icons:hover {
+    background-color: aqua;
+    cursor: pointer;
+}
+
+.whatsapp {
+    height: 20px;
 }
 
 .logo {
     display: flex;
 }
 
-.menu {
-    display: flex;
-    justify-content: space-between;
-    width: 240px;
-}
-
 .banner-inicial {
-    display: inline-block;
     position: relative;
 }
 
@@ -42,18 +69,25 @@
     position: absolute;
     flex-direction: column;
     color: #FFFFFF;
-    margin-left: 2%;
-    top: 50vh;
+    margin-left: 10%;
+    top: 20vh;
     transition: 0.5s;
 }
 
-.titulo {
-    font-size: 42px;
+.titulo-principal {
+    font-size: 64px;
     font-weight: 700;
+    color: aqua;
+}
+
+.titulo {
+    font-size: 36px;
+    font-weight: 700;
+    color: aqua;
 }
 
 .subtitulo {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 400;
     width: 350px;
 }
@@ -71,20 +105,19 @@
 
 .servicos {
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     width: 100vw;
     height: 60vh;
-    padding: 2% 0;
+    padding: 2% 10%;
 }
 
 .cards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    width: 100vw;
-    gap: 80px;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .card {
@@ -93,6 +126,7 @@
     padding: 12px;
     border: #bbbaba solid 1px;
     border-radius: 8px;
+    margin-top: 2%;
     width: 220px;
     height: 300px;
 }
