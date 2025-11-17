@@ -13,9 +13,8 @@
     align-items: center;
     justify-content: space-between;
     width: 100vw;
-    height: 80px;
-    background-color: #000000;
-    color: #007B42;
+    height: 40px;
+    background-color: #0026ff;
     padding: 0 2%;
 }
 
@@ -76,7 +75,7 @@
     justify-content: space-evenly;
     width: 100vw;
     height: 60vh;
-    padding: 2% 0; 
+    padding: 2% 0;
 }
 
 .cards {
@@ -118,7 +117,6 @@
         top: 40vh;
     }
 }
-
 
 @media (max-width: 720px) {
     .text-titulo {
