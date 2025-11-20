@@ -1,3 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
 @font-face {
     font-family: "Organetto";
     src: url(/Antt/fonte/organetto-regular.ttf);
@@ -7,100 +15,99 @@
     font-family: "Conthrax";
     src: url(/Antt/fonte/Conthrax-SemiBold.otf);
 }
+p {
+    font-family: "Organetto";
+    font-size: 0.8rem;
+}
 
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+h1 {
     font-family: "Conthrax";
+    font-size: 2.8rem;
 }
 
-.contatos {
-    display: flex;
-    text-align: center;
-    justify-content: flex-end;
-    width: 100vw;
-    height: 40px;
-    margin: 12px 0;
-    background-color: #ffffff;
-    padding: 0 10%;
+h2 {
+    font-family: "Conthrax";
+    font-size: 1.6rem;
 }
 
-.links {
+h3 {
+    font-family: "Conthrax";
+    font-size: 1.4rem;
+}
+
+header {
     display: flex;
+    height: 52px;
+    padding: 6px 10%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
     gap: 12px;
 }
 
-.link {
-    font-weight: 700;
-    margin-top: 12px;
-    transition: 0.6s;
+.navbar-buttom {
+    font-weight: bold;
+    cursor: pointer;
 }
 
-.link:hover {
-    cursor: pointer;
+.navbar-buttom:hover {
     color: #00246A;
 }
 
-.icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px;
-    border-radius: 50%;
-    border: #000000 solid 1px;
-    transition: 0.6s;
-}
-
-.icon:hover {
-    background-color: #00246A;
-    cursor: pointer;
-}
-
-.icons {
-    height: 20px;
-}
-
 .logo {
-    display: flex;
+    width: 200px;
+    height: auto;
 }
 
 .banner-Inicial {
+    display: flex;
     background-image: url(/Antt/assets/img/caminhaocargabranco.jpg);
     background-size: cover;
-    width: 100vw;
     height: 90vh;
+    padding: 6% 10%;
 }
 
 .text-titulo {
     display: flex;
-    position: absolute;
     flex-direction: column;
     color: #FFFFFF;
+    gap: 20px;
     width: 40vw;
-    margin-left: 10%;
-    top: 40vh;
     transition: 0.5s;
 }
 
+.botao-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00246A;
+    color: #FFFFFF;
+    padding: 10px;
+    width: 440px;
+    border-radius: 16px;
+    gap: 20px;
+    font-family: "Organetto";
+}
+
+.botao-hero:hover {
+    background-color: #001b52;
+}
+
+.whatsapp-icon-hero {
+    width: 40px;
+    height: auto;
+}
+
 .titulo-principal {
-    font-size: 64px;
-    font-weight: 700;
     color: #00246A;
 }
 
 .titulo {
-    font-size: 36px;
-    font-weight: 700;
     color: #00246A;
-}
-
-.subtitulo {
-    font-size: 24px;
-    font-weight: 400;
-    width: 350px;
 }
 
 .InicioButton {
@@ -118,8 +125,6 @@
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 100vw;
-    height: 60vh;
     padding: 2% 10%;
 }
 
@@ -129,47 +134,160 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 2%;
+    margin: 12px 0;
+    gap: 12px;
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    border: #bbbaba solid 1px;
-    border-radius: 8px;
     width: 300px;
-    height: 420px;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding-bottom: 20px;
+    transition: 0.3s ease;
 }
 
-.img {
-    display: flex;
-    justify-content: center;
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-.imagem {
-    display: flex;
+.card .img {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+.card .imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-family: "Conthrax";
+    font-size: 1.2rem;
+    color: #00246A;
+    margin: 16px 18px 8px;
+}
+
+.card p {
+    font-family: "Organetto";
+    font-size: 0.9rem;
+    margin: 0 18px 20px;
+    color: #333;
+}
+
+.botao {
+    width: 80%;
+    margin: 0 auto;
+    background: #00246A;
+    color: white;
+    text-align: center;
+    padding: 12px;
     border-radius: 8px;
-    width: 300px;
+    font-family: "Conthrax";
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #01338f;
+}
+
+
+.apresentacao {
+    align-items: center;
+    flex-direction: column;
+    background-color: #dadada;
+    justify-content: space-evenly;
+    padding: 2% 10%;
 }
 
 .info {
-    margin-top: 4px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Organetto";
+    margin-top: 10px;
+    margin-left: 30%;
+    width: 40vw;
 }
 
-@media (max-width: 920px) {
-    .text-titulo {
-        top: 40vh;
-    }
+.session {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 4%;
 }
 
-@media (max-width: 720px) {
-    .text-titulo {
-        top: 30vh;
-    }
+.traco {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 10px;
+    background-color: #00246A;
+    width: 2px;
+    height: 160px;
 }
 
-@media (max-width: 400px) {
-    .text-titulo {
-        top: 20vh;
-    }
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.circulo {
+    background-color: #00246A;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.whatsapp-icon {
+    position: fixed;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    bottom: 0;
+    right: 0;
+    margin: 2%;
+}
+
+footer {
+    display: flex;
+    background-color: #ffffff;
+    height: 40vh;
+    padding: 6px 10%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-footer {
+    width: 44%;
+}
+
+.logofooter {
+    width: 360px;
+}
+
+.navbar-footer {
+    display: flex;
+    width: 28%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10%;
+    gap: 4px;
+}
+
+.contatos-footer {
+    display: flex;
+    width: 25%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
 }
