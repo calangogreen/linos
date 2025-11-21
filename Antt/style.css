@@ -15,6 +15,13 @@
     font-family: "Conthrax";
     src: url(/Antt/fonte/Conthrax-SemiBold.otf);
 }
+
+a {
+    font-family: "Organetto";
+    color: #000000;
+    font-size: 0.8rem;
+}
+
 p {
     font-family: "Organetto";
     font-size: 0.8rem;
@@ -35,12 +42,23 @@ h3 {
     font-size: 1.4rem;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     display: flex;
+    position: fixed;
+    width: 100%;
     height: 52px;
     padding: 6px 10%;
     justify-content: space-between;
     align-items: center;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    z-index: 1;
 }
 
 .navbar {
@@ -67,6 +85,10 @@ header {
     display: flex;
     background-image: url(/Antt/assets/img/caminhaocargabranco.jpg);
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 52px;
+    width: 100%;
     height: 90vh;
     padding: 6% 10%;
 }
@@ -125,7 +147,7 @@ header {
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 2% 10%;
+    padding: 4% 10%;
 }
 
 .cards {
@@ -145,14 +167,14 @@ header {
     background: #ffffff;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     padding-bottom: 20px;
     transition: 0.3s ease;
 }
 
 .card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .card .img {
@@ -201,18 +223,15 @@ header {
 
 
 .apresentacao {
-    align-items: center;
-    flex-direction: column;
     background-color: #dadada;
-    justify-content: space-evenly;
-    padding: 2% 10%;
+    padding: 4% 10%;
 }
 
 .info {
     display: flex;
     flex-direction: column;
     font-family: "Organetto";
-    margin-top: 10px;
+    margin: 20px 0;
     margin-left: 30%;
     width: 40vw;
 }
@@ -246,6 +265,53 @@ header {
     border-radius: 50%;
 }
 
+.sobre {
+    padding: 4% 10%;
+}
+
+.sobre-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    margin-left: 30%;
+    width: 40vw;
+}
+
+.sobre-conteudo p {
+    width: 60vw;
+    margin-bottom: 14px;
+    font-family: "Organetto";
+    font-size: 1rem;
+}
+
+.contato {
+    background-color: #dadada;
+    padding: 4% 10%;
+}
+
+.contato-grid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    min-height: 50vh;
+}
+
+.contato-item h3 {
+    font-family: "Conthrax";
+    margin-bottom: 6px;
+}
+
+.contato-item p,
+.contato-item a {
+    font-family: "Organetto";
+    font-size: 1rem;
+    color: #000;
+}
+
 .whatsapp-icon {
     position: fixed;
     cursor: pointer;
@@ -259,14 +325,12 @@ header {
 footer {
     display: flex;
     background-color: #ffffff;
-    height: 40vh;
-    padding: 6px 10%;
+    padding: 52px 10%;
     justify-content: space-between;
-    align-items: center;
 }
 
 .logo-footer {
-    width: 44%;
+    width: 50%;
 }
 
 .logofooter {
@@ -275,11 +339,11 @@ footer {
 
 .navbar-footer {
     display: flex;
-    width: 28%;
+    width: 25%;
     height: 100%;
     flex-direction: column;
     justify-content: center;
-    margin-left: 10%;
+    margin-top: 18px;
     gap: 4px;
 }
 
@@ -287,7 +351,59 @@ footer {
     display: flex;
     width: 25%;
     height: 100%;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
+    margin-top: 18px;
     gap: 4px;
+}
+
+
+@media (max-width: 937px) {
+    .text-titulo {
+        width: 100%;
+        margin-top: 8vw;
+        text-align: center;
+        align-items: center;
+    }
+
+    .titulo-principal {
+        font-size: 2rem;
+    }
+
+    .subtitulo {
+        font-size: 1.2rem;
+    }
+
+    .botao-hero {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar-footer {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .contatos-footer {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .contato-grid {
+        flex-direction: column;
+    }
+
 }
