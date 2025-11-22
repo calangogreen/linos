@@ -11,15 +11,22 @@
 
 <body>
     <header class="nav">
-        <div class="logo">
-            <img class="logo" src="/Antt/assets/img/logoMateusAntt.png" alt="Logo Mateus ANTT">
-        </div>
-        <div class="navbar">
+        <a href="#inicio">
+            <div class="logo">
+                <img class="logo" src="/Antt/assets/img/logoMateusAntt.png" alt="Logo Mateus ANTT">
+            </div>
+        </a>
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="navbar" id="navbar">
             <a class="navbar-buttom" href="#inicio">Início</a>
             <a class="navbar-buttom" href="#servicos">Serviços</a>
-            <a class="navbar-buttom" href="#beneficios">Benefícios</a>
-            <a class="navbar-buttom" href="#sobre">Sobre nós</a>
-            <a class="navbar-buttom" href="#contato">Contatos</a>
+            <a class="navbar-buttom" href="#documentos">Documentos</a>
+            <a class="navbar-buttom" href="#beneficios">Beneficios</a>
+            <a class="navbar-buttom" href="#faq">Dúvidas</a>
         </div>
     </header>
     <main>
@@ -31,7 +38,7 @@
                 <h2 class="subtitulo">
                     Serviços de cadastro, inclusão, revalidação e auterações de ANTT
                 </h2>
-                <a class="botao-hero" href="https://wa.me/5573982566475" target="_blank">Fale com a Mateus no
+                <a class="botao-hero" href="https://wa.me/5573981022133?text=Olá%20Mateus%2C%20preciso%20de%20um%20serviço" target="_blank">Fale com a Mateus no
                     WhatsApp<img class="whatsapp-icon-hero" alt="whatsapp-icon-png"
                         src="/Antt/assets/icons/whatsapp.png"></a>
             </div>
@@ -47,7 +54,7 @@
                     <p>
                         Faça seu primeiro registro de transportador e receba seu certificado na mesma hora.
                     </p>
-                    <a href="#" class="botao">Solicitar</a>
+                    <a href="https://wa.me/5573981022133?text=Olá%2C%20preciso%20de%20uma%20ANTT%20nova" class="botao">Solicitar</a>
                 </div>
 
                 <div class="card" data-aos="fade-up" data-aos-duration="1000">
@@ -58,7 +65,7 @@
                     <p>
                         Sua ANTT venceu ou suspendeu? Resolva online sem complicação e garanta continuidade do trabalho.
                     </p>
-                    <a href="#" class="botao">Regularizar</a>
+                    <a href="https://wa.me/5573981022133?text=Olá%2C%20preciso%20regularizar%20uma%20ANTT" class="botao">Regularizar</a>
                 </div>
 
                 <div class="card" data-aos="fade-up" data-aos-duration="1000">
@@ -69,7 +76,7 @@
                     <p>
                         Adicione ou substitua seu caminhão no registro ANTT de forma rápida e sem burocracia.
                     </p>
-                    <a href="#" class="botao">Incluir Veículo</a>
+                    <a href="https://wa.me/5573981022133?text=Olá%2C%20preciso%20de%20uma%20inclusão" class="botao">Incluir Veículo</a>
                 </div>
 
                 <div class="card" data-aos="fade-up" data-aos-duration="1000">
@@ -81,9 +88,58 @@
                         Mantenha endereço, razão social, placa e outros dados sempre corretos e evite problemas no
                         cadastro.
                     </p>
-                    <a href="#" class="botao">Atualizar Dados</a>
+                    <a href="https://wa.me/5573981022133?text=Olá%2C%20preciso%20atualizar%20uma%20ANTT" class="botao">Atualizar Dados</a>
                 </div>
             </ol>
+        </section>
+        <section class="documentos" id="documentos">
+            <h2 class="titulo-principal">Documentos Necessários:</h2>
+            <div class="documento-bloco" data-aos="fade-up" data-aos-duration="1000">
+                <h3 class="titulo">ANTT Nova — Pessoa Física (CPF)</h3>
+                <p>CNH</p>
+                <p>Comprovante de endereço</p>
+                <p>CRLV do veículo a ser incluído</p>
+            </div>
+            <div class="documento-bloco" data-aos="fade-up" data-aos-duration="1000">
+                <h3 class="titulo">ANTT Nova — Pessoa Jurídica (CNPJ)</h3>
+                <p>Contrato Social ou CCMEI</p>
+                <p>CNH ou RG dos sócios</p>
+                <p>CRLV do veículo a ser incluído</p>
+                <p>Cartão CNPJ com atividade de Transporte Rodoviário</p>
+            </div>
+            <div class="documento-bloco" data-aos="fade-up" data-aos-duration="1000">
+                <h3 class="titulo">Inclusão — Veículo Próprio</h3>
+                <p>CRLV</p>
+            </div>
+
+            <div class="documento-bloco" data-aos="fade-up" data-aos-duration="1000">
+                <h3 class="titulo">Inclusão — Veículo de Terceiro (com/sem contrato)</h3>
+                <p>CRLV</p>
+                <p>ANTT do proprietário</p>
+                <p>Contrato de arrendamento (podemos emitir caso o cliente não tenha)</p>
+            </div>
+
+            <div class="documento-bloco" data-aos="fade-up" data-aos-duration="1000">
+                <h3 class="titulo">Revalidação / Recadastro</h3>
+                <p>Mesma documentação do cadastro inicial</p>
+            </div>
+
+            <div class="documento-bloco" data-aos="fade-up" data-aos-duration="1000">
+                <h3 class="titulo">Exclusão de Placa</h3>
+                <p>Para pessoa jurídica: modelo de exclusão assinado (fornecemos o modelo)</p>
+            </div>
+
+            <div class="documento-bloco" data-aos="fade-up" data-aos-duration="1000">
+                <h3 class="titulo">Inclusão de Auxiliar TAC</h3>
+                <p>ANTT</p>
+                <p>CNH do auxiliar</p>
+            </div>
+
+            <div class="documento-bloco" data-aos="fade-up" data-aos-duration="1000">
+                <h3 class="titulo">Atualização de Dados</h3>
+                <p>ANTT</p>
+                <p>Dados que precisam ser atualizados</p>
+            </div>
         </section>
         <section class="apresentacao" id="beneficios">
             <h2 class="titulo">Por quer escolher nossos serviço?</h2>
@@ -138,47 +194,68 @@
                 </div>
             </div>
         </section>
-        <section class="sobre" id="sobre">
-            <h2 class="titulo">Sobre nós</h2>
+        <section class="faq" id="faq">
+            <h2 class="titulo">Dúvidas Frequentes</h2>
 
-            <div class="sobre-conteudo" data-aos="fade-up" data-aos-duration="1000">
-                <p>
-                    A Mateus Assessoria em ANTT nasceu para facilitar a vida de motoristas autônomos e empresas de
-                    transporte. Trabalhamos de forma rápida, segura e totalmente digital para garantir que seu registro,
-                    renovação ou alteração ANTT seja concluído sem complicações.
-                </p>
+            <div class="faq-container" data-aos="fade-up" data-aos-duration="1000">
+                <div class="faq-item">
+                    <button class="faq-question">O que é o RNTRC e por que o cadastro é obrigatório?</button>
+                    <div class="faq-answer">
+                        <p>
+                            O Registro Nacional de Transportadores Rodoviários de Cargas (RNTRC) é um banco de dados da
+                            ANTT que reúne todas as informações de transportadores autorizados a operar no Brasil.
+                            O registro é obrigatório para empresas e motoristas autônomos que atuam no transporte
+                            rodoviário de cargas.
+                        </p>
+                    </div>
+                </div>
 
-                <p>
-                    Temos experiência nos processos exigidos pela Agência Nacional de Transportes Terrestres e ajudamos
-                    diariamente dezenas de motoristas a manterem sua documentação em dia, evitando multas e problemas na
-                    estrada.
-                </p>
+                <div class="faq-item">
+                    <button class="faq-question">Em quanto tempo o registro ANTT é liberado?</button>
+                    <div class="faq-answer">
+                        <p>
+                            Após o envio correto da documentação e confirmação do pagamento, o cadastro geralmente é
+                            liberado no mesmo dia.
+                            A maioria dos registros é aprovada em cerca de 1 hora.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">Como consultar o andamento da minha solicitação?</button>
+                    <div class="faq-answer">
+                        <p>
+                            Acompanhamento é feito em tempo real pelo WhatsApp.
+                            Enviaremos atualizações de cada etapa até a liberação da ANTT.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">Como posso obter um orçamento detalhado?</button>
+                    <div class="faq-answer">
+                        <p>
+                            Basta chamar no WhatsApp para receber um orçamento personalizado de acordo com o serviço
+                            desejado.
+                            Também aceitamos propostas pelo e-mail: <b>mateusantt@gmail.com</b>.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">Meus dados estão seguros? Como são tratados?</button>
+                    <div class="faq-answer">
+                        <p>
+                            Seguimos as diretrizes da LGPD, utilizando seus dados exclusivamente para execução do
+                            serviço contratado.
+                            Garantimos segurança e confidencialidade total das informações.
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </section>
-        <section class="contato" id="contato">
-            <h2 class="titulo">Fale com a gente</h2>
-
-            <div class="contato-grid" data-aos="fade-up" data-aos-duration="1000">
-
-                <div class="contato-item">
-                    <h3>WhatsApp</h3>
-                    <a href="https://wa.me/5573982566475" target="_blank">
-                        (73) 98256-6475
-                    </a>
-                </div>
-
-                <div class="contato-item">
-                    <h3>Email</h3>
-                    <p>mateusantt@gmail.com</p>
-                </div>
-
-                <div class="contato-item">
-                    <h3>Horário</h3>
-                    <p>Seg à Sáb — 08h às 18h</p>
-                </div>
-            </div>
-        </section>
-        <a href="https://wa.me/5573982566475" target="_blank">
+        <a href="https://wa.me/557381022133" target="_blank">
             <img class="whatsapp-icon" src="/Antt/assets/icons/whatsappVerde.png" alt="Icone do whatsapp">
         </a>
     </main>
@@ -186,23 +263,22 @@
         <div class="logo-footer">
             <img class="logofooter" src="/Antt/assets/img/logoMateusAntt.png" alt="Logo Mateus ANTT">
         </div>
-        <div class="navbar-footer">
+        <div class="nav-footer">
             <h3>Menu</h3>
-            <p>Serviços</p>
-            <p></p>
-            <p>Contatos</p>
-            <p>Sobre nos</p>
+            <a class="navbar-footer" href="#inicio">Início</a>
+            <a class="navbar-footer" href="#servicos">Serviços</a>
+            <a class="navbar-footer" href="#documentos">Documentos</a>
+            <a class="navbar-footer" href="#beneficios">Beneficios</a>
+            <a class="navbar-footer" href="#faq">Dúvidas</a>
         </div>
         <div class="contatos-footer">
             <h3>Contatos</h3>
-            <p>(73) 99999-9999</p>
-            <p>mateusantt@gmail.com</p>
+            <a class="navbar-footer" href="https://wa.me/5573981022133?text=Olá%20Mateus%2C%20preciso%20de%20um%20serviço" target="_blank">(73) 98102-2133</a>
+            <a class="navbar-footer" href="#inicio" target="_blank">mateusantt@gmail.com</a>
         </div>
     </footer>
 </body>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
+<script src="script.js"></script>
 
 </html>
