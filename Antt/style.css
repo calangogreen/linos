@@ -17,18 +17,18 @@
 }
 
 a {
-    font-family: "Organetto";
+    font-family: "Roboto";
     color: #000000;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 p {
-    font-family: "Organetto";
-    font-size: 0.8rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
 }
 
 h1 {
-    font-family: "Conthrax";
+    font-family: "Conthrax", sans-serif;
     font-size: 2.8rem;
 }
 
@@ -100,6 +100,7 @@ header {
     padding: 16px;
     font-weight: bold;
     cursor: pointer;
+    font-family: "Organetto";
 }
 
 .navbar-buttom:hover {
@@ -228,8 +229,7 @@ header {
 }
 
 .card p {
-    font-family: "Organetto";
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin: 0 18px 20px;
     color: #333;
 }
@@ -307,6 +307,10 @@ header {
 }
 
 .documento-bloco {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 180px;
     margin-bottom: 28px;
     padding: 20px;
     border-left: 4px solid #00246A;
@@ -322,7 +326,7 @@ header {
 
 .documento-bloco p {
     margin: 4px 0;
-    font-size: 0.95rem;
+    font-size: 1rem;
 }
 
 .faq {
@@ -416,6 +420,7 @@ footer {
 
 .navbar-footer {
     text-decoration: underline;
+    font-family: "Organetto";
 }
 
 .navbar-footer:hover {
@@ -515,23 +520,8 @@ footer {
 
     .logo-footer {
         display: flex;
+        align-items: center;
         justify-content: center;
-    }
-
-    .navbar-footer {
-        display: flex;
-        align-items: center;
-        width: 100%;
-    }
-
-    .contatos-footer {
-        display: flex;
-        align-items: center;
-        width: 100%;
-    }
-
-    .contato-grid {
-        flex-direction: column;
     }
 
 }
