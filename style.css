@@ -17,20 +17,20 @@
 }
 
 .animate-on-scroll {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: all 0.6s ease-out;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
 }
 
 .animate-left-to-right {
-  opacity: 0;
-  transform: translateX(-50px);
-  transition: all 0.6s ease-out;
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.6s ease-out;
 }
 
 .visible {
-  opacity: 1;
-  transform: translateY(0) translateX(0);
+    opacity: 1;
+    transform: translateY(0) translateX(0);
 }
 
 a {
@@ -147,8 +147,12 @@ header {
     flex-direction: column;
     color: #FFFFFF;
     gap: 20px;
-    width: 40vw;
+    width: 42vw;
     transition: 0.5s;
+}
+
+.subtitulo {
+    width: 38vw;
 }
 
 .botao-hero {
@@ -203,7 +207,7 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-evenly;
     margin: 12px 0;
     gap: 12px;
@@ -213,11 +217,11 @@ header {
     display: flex;
     flex-direction: column;
     width: 300px;
+    height: 440px;
     background: #ffffff;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    padding-bottom: 20px;
     transition: 0.3s ease;
 }
 
@@ -246,9 +250,14 @@ header {
 }
 
 .card p {
-    font-size: 1rem;
-    margin: 0 18px 20px;
+    font-size: 0.95rem;
+    margin: 0 18px 12px;
     color: #333;
+    flex-grow: 1;
+}
+
+.card .botao {
+    margin-bottom: 16px;
 }
 
 .botao {
@@ -352,11 +361,10 @@ header {
 
 .faq-container {
     width: 80%;
-    margin-top: 20px;
-    margin-inline: 10vw;
+    margin: 20px auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
 }
 
@@ -367,6 +375,8 @@ header {
     font-family: "Organetto";
     text-align: left;
     background: #ffffff;
+    color: #001642;
+    font-weight: 500;
     border: none;
     cursor: pointer;
     display: flex;
