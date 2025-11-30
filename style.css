@@ -8,12 +8,12 @@
 
 @font-face {
     font-family: "Organetto";
-    src: url(/Antt/fonte/organetto-regular.ttf);
+    src: url(/fonte/organetto-regular.ttf);
 }
 
 @font-face {
     font-family: "Conthrax";
-    src: url(/Antt/fonte/Conthrax-SemiBold.otf);
+    src: url(/fonte/Conthrax-SemiBold.otf);
 }
 
 a {
@@ -115,7 +115,7 @@ header {
 
 .banner-Inicial {
     display: flex;
-    background-image: url(/Antt/assets/img/caminhaocargabranco.jpg);
+    background-image: url(/assets/img/caminhaocargabranco.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -347,7 +347,7 @@ header {
     width: 100%;
     padding: 16px 18px;
     font-size: 1rem;
-    font-family: "Conthrax";
+    font-family: "Organetto";
     text-align: left;
     background: #ffffff;
     border: none;
