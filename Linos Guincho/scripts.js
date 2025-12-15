@@ -1,6 +1,4 @@
-// scripts.js - interações simples: menu scroll suavizado e sticky button mobile
 document.addEventListener('DOMContentLoaded', function() {
-    // smooth scroll for internal links
     document.querySelectorAll('a[href^="#"]').forEach(a => {
         a.addEventListener('click', function(e) {
             const target = document.querySelector(this.getAttribute('href'));
@@ -11,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // optional: floating whatsapp on small screens
     const waTop = document.getElementById('whatsapp-top');
 
     function checkWidth() {

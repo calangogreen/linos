@@ -6,14 +6,9 @@
     text-decoration: none;
 }
 
-@font-face {
-    font-family: "Organetto";
-    src: url(fonte/organetto-regular.ttf);
-}
-
-@font-face {
-    font-family: "Conthrax";
-    src: url(fonte/Conthrax-SemiBold.otf);
+:root {
+    --font-montserrat: 'Montserrat', sans-serif;
+    --font-orbitron: 'Orbitron', sans-serif;
 }
 
 .animate-on-scroll {
@@ -45,17 +40,17 @@ p {
 }
 
 h1 {
-    font-family: "Conthrax", sans-serif;
+    font-family: var(--font-orbitron), sans-serif;
     font-size: 2.8rem;
 }
 
 h2 {
-    font-family: "Conthrax";
+    font-family: var(--font-orbitron);
     font-size: 1.6rem;
 }
 
 h3 {
-    font-family: "Conthrax";
+    font-family: var(--font-orbitron);
     font-size: 1.4rem;
 }
 
@@ -117,7 +112,7 @@ header {
     padding: 16px;
     font-weight: bold;
     cursor: pointer;
-    font-family: "Organetto";
+    font-family: var(--font-montserrat);
 }
 
 .navbar-buttom:hover {
@@ -151,7 +146,13 @@ header {
     transition: 0.5s;
 }
 
+.titulo-principal {
+    font-size: 2.2rem;
+    color: #00246A;
+}
+
 .subtitulo {
+    font-size: 1.4rem;
     width: 38vw;
 }
 
@@ -165,7 +166,7 @@ header {
     width: 440px;
     border-radius: 16px;
     gap: 20px;
-    font-family: "Organetto";
+    font-family: var(--font-montserrat);
 }
 
 .botao-hero:hover {
@@ -177,9 +178,7 @@ header {
     height: auto;
 }
 
-.titulo-principal {
-    color: #00246A;
-}
+
 
 .titulo {
     color: #00246A;
@@ -243,7 +242,7 @@ header {
 }
 
 .card h3 {
-    font-family: "Conthrax";
+    font-family: var(--font-orbitron);
     font-size: 1.2rem;
     color: #00246A;
     margin: 16px 18px 8px;
@@ -268,7 +267,7 @@ header {
     text-align: center;
     padding: 12px;
     border-radius: 8px;
-    font-family: "Conthrax";
+    font-family: var(--font-orbitron);
     font-size: 0.9rem;
     cursor: pointer;
     transition: 0.3s;
@@ -288,7 +287,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: "Organetto";
+    font-family: var(--font-montserrat);
     margin-left: 30%;
     width: 40vw;
 }
@@ -322,39 +321,6 @@ header {
     border-radius: 50%;
 }
 
-.documentos {
-    padding: 4% 10%;
-    background-color: #dadada;
-}
-
-.documentos .titulo-principal {
-    color: #00246A;
-    margin-bottom: 20px;
-}
-
-.documento-bloco {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 180px;
-    margin-bottom: 28px;
-    padding: 20px;
-    border-left: 4px solid #00246A;
-    background: #f5f5f5;
-    border-radius: 6px;
-}
-
-.documento-bloco .titulo {
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-    color: #00246A;
-}
-
-.documento-bloco p {
-    margin: 4px 0;
-    font-size: 1rem;
-}
-
 .faq {
     padding: 4% 10%;
 }
@@ -372,11 +338,11 @@ header {
     width: 100%;
     padding: 16px 18px;
     font-size: 1rem;
-    font-family: "Organetto";
+    font-family: var(--font-montserrat);
     text-align: left;
     background: #ffffff;
     color: #001642;
-    font-weight: 500;
+    font-weight: 600;
     border: none;
     cursor: pointer;
     display: flex;
@@ -405,7 +371,7 @@ header {
 
 .faq-answer p {
     padding: 14px 0;
-    font-family: "Organetto";
+    font-family: var(--font-montserrat);
     font-size: 0.95rem;
     color: #333;
 }
@@ -423,12 +389,14 @@ header {
 footer {
     display: flex;
     background-color: #dadada;
-    padding: 52px 10%;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 28px 10%;
+    justify-content: space-evenly;
 }
 
 .logo-footer {
-    width: 50%;
+    display: flex;
+    align-items: center;
 }
 
 .logofooter {
@@ -437,39 +405,24 @@ footer {
 
 .nav-footer {
     display: flex;
-    width: 25%;
-    height: 100%;
     flex-direction: column;
-    justify-content: center;
     margin-top: 18px;
-    gap: 4px;
 }
 
 .navbar-footer {
+    width: 180px;
     text-decoration: underline;
-    font-family: "Organetto";
+    font-family: var(--font-montserrat);
 }
 
 .navbar-footer:hover {
     color: #00246A;
 }
 
-.contatos-footer {
-    display: flex;
-    width: 25%;
-    height: 100%;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 18px;
-    gap: 4px;
-}
-
 .direitos {
     display: flex;
-    width: 100vw;
-    height: 40px;
-    justify-content: center;
-    align-items: center;
+    padding-top: 28px;
+    font-family: var(--font-montserrat);
 }
 
 
@@ -532,7 +485,7 @@ footer {
     .subtitulo {
         font-size: 1.2rem;
     }
-    
+
     .info {
         width: 80vw;
         margin-left: 0;
@@ -548,20 +501,25 @@ footer {
     }
 
     .faq-question {
-        font-size: 1rem;
+        font-size: 0.9rem;
         padding: 16px;
     }
 
     footer {
-        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .logo-footer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .logofooter {
+        width: 80vw;
+    }
+
+    .nav-footer {
+        margin-left: 10vw;
+    }
+
+    .direitos p {
+        font-size: 0.6rem;
     }
 
 }
