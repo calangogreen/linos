@@ -42,27 +42,36 @@
     </section>
 
     <section id="sobre" class="section">
-        <div class="container">
-            <span class="section-tag">SOBRE NÓS</span>
-            <h2>Especialistas em Soluções Hídricas</h2>
-            <p>
-                Há mais de <strong>15 anos</strong>, a <strong>Linos Poços</strong> atua com excelência na
-                perfuração, manutenção e regularização de poços artesianos, oferecendo
-                soluções seguras, eficientes e duráveis para garantir o acesso à água de qualidade.
-            </p>
+        <div class="container sobre-grid">
 
-            <p>
-                Trabalhamos com equipamentos modernos, equipe especializada e total compromisso
-                com as normas técnicas e ambientais, atendendo residências, propriedades rurais,
-                empresas e grandes empreendimentos.
-            </p>
+            <div class="sobre-text">
+                <span class="section-tag">SOBRE NÓS</span>
+                <h2>Especialistas em Soluções Hídricas</h2>
 
-            <div class="features">
-                <div>✔ Atendimento personalizado</div>
-                <div>✔ Orçamento sem compromisso</div>
-                <div>✔ Garantia de qualidade nos serviços</div>
-                <div>✔ Suporte técnico completo</div>
+                <p>
+                    Há mais de <strong>15 anos</strong>, a <strong>Linos Poços</strong> atua com excelência na
+                    perfuração, manutenção e regularização de poços artesianos, oferecendo
+                    soluções seguras, eficientes e duráveis para garantir o acesso à água de qualidade.
+                </p>
+
+                <p>
+                    Trabalhamos com equipamentos modernos, equipe especializada e total compromisso
+                    com as normas técnicas e ambientais, atendendo residências, propriedades rurais,
+                    empresas e grandes empreendimentos.
+                </p>
+
+                <div class="features">
+                    <div>✔ Atendimento personalizado</div>
+                    <div>✔ Orçamento sem compromisso</div>
+                    <div>✔ Garantia de qualidade</div>
+                    <div>✔ Suporte técnico completo</div>
+                </div>
             </div>
+
+            <div class="sobre-image">
+                <img src="img/mopp.png" alt="Equipe Linos Poços em operação">
+            </div>
+
         </div>
     </section>
 
@@ -77,7 +86,9 @@
             <div class="cards">
 
                 <div class="card modern">
-                    <img src="img/perfuracao.png" alt="Perfuração de Poços">
+                    <div class="card-image">
+                        <img src="img/perfuracao.png" alt="Perfuração de Poços">
+                    </div>
                     <div class="card-content">
                         <h3>Perfuração de Poços</h3>
                         <p>
@@ -88,7 +99,9 @@
                 </div>
 
                 <div class="card modern">
-                    <img src="img/manutencao.png" alt="Limpeza e Manutenção">
+                    <div class="card-image">
+                        <img src="img/manutencao.png" alt="Limpeza e Manutenção">
+                    </div>
                     <div class="card-content">
                         <h3>Limpeza e Manutenção</h3>
                         <p>
@@ -99,7 +112,9 @@
                 </div>
 
                 <div class="card modern">
-                    <img src="img/bombas.png" alt="Instalação de Bombas">
+                    <div class="card-image">
+                        <img src="img/bombas.png" alt="Instalação de Bombas">
+                    </div>
                     <div class="card-content">
                         <h3>Instalação de Bombas</h3>
                         <p>
@@ -110,7 +125,9 @@
                 </div>
 
                 <div class="card modern">
-                    <img src="img/vazao.png" alt="Teste de Vazão">
+                    <div class="card-image">
+                        <img src="img/vazao.png" alt="Teste de Vazão">
+                    </div>
                     <div class="card-content">
                         <h3>Teste de Vazão</h3>
                         <p>
@@ -121,7 +138,9 @@
                 </div>
 
                 <div class="card modern">
-                    <img src="img/regularizacao.png" alt="Regularização Ambiental">
+                    <div class="card-image">
+                        <img src="img/regularizacao.png" alt="Regularização Ambiental">
+                    </div>
                     <div class="card-content">
                         <h3>Regularização Ambiental</h3>
                         <p>
@@ -136,7 +155,7 @@
         </div>
     </section>
 
-    <section id="contato" class="section">
+    <section id="contato" class="section light">
         <div class="container">
             <span class="section-tag">CONTATO</span>
             <h2>Fale Conosco</h2>
@@ -145,12 +164,56 @@
                 Nossa equipe está pronta para oferecer a melhor solução para suas necessidades.
             </p>
 
+            <!-- Cards de contato -->
             <div class="contact-grid">
-                <div class="contact-item">📞 (73) 99999-9999</div>
-                <div class="contact-item">✉ contato@linospocos.com.br</div>
-                <div class="contact-item">📍 Eunápolis - BA</div>
-                <div class="contact-item">⏰ Segunda a sexta: 8h às 18h</div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <div>
+                        <h4>Telefone</h4>
+                        <span>(73) 99999-9999</span>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">✉</div>
+                    <div>
+                        <h4>E-mail</h4>
+                        <span>contato@linospocos.com.br</span>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <div>
+                        <h4>Localização</h4>
+                        <span>Eunápolis - BA</span>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">⏰</div>
+                    <div>
+                        <h4>Horário</h4>
+                        <span>Segunda a sexta • 8h às 18h</span>
+                    </div>
+                </div>
+
             </div>
+
+            <!-- Card WhatsApp -->
+            <div class="whatsapp-card">
+                <div class="whatsapp-info">
+                    <div class="whatsapp-icon">💬</div>
+                    <div>
+                        <h3>Atendimento via WhatsApp</h3>
+                        <p>Resposta rápida e orçamento sem compromisso</p>
+                    </div>
+                </div>
+
+                <a href="#" class="whatsapp-btn">Iniciar Conversa</a>
+            </div>
+
         </div>
     </section>
 
@@ -174,7 +237,9 @@
         </div>
     </footer>
 
-    <a href="#" class="whatsapp">💬</a>
+    <a href="https://wa.me/557381022133" target="_blank">
+        <img class="whatsapp-icon" src="img/whatsappVerde.png" alt="Icone do whatsapp">
+    </a>
 
     <script src="script.js"></script>
 </body>
