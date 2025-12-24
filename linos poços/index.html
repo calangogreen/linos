@@ -4,88 +4,179 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Linos Poços | Perfuração de Poços Artesianos</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Linos Poços</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-    <header>
-        <div class="overlay"></div>
-        <h1>Linos Poços</h1>
-        <p>Perfuração e Manutenção de Poços Artesianos com Excelência</p>
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                💧 <strong>Linos Poços</strong>
+            </div>
+
+            <nav class="nav">
+                <a href="#sobre">Sobre</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#contato">Contato</a>
+                <button class="btn-primary">Solicitar Orçamento</button>
+            </nav>
+        </div>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#sobre">Sobre Nós</a></li>
-            <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </nav>
+    <section class="hero">
+        <div class="hero-content">
+            <span class="badge">Mais de 15 anos de experiência</span>
+            <h1>Linos Poços</h1>
+            <p>
+                Perfuração e Manutenção de Poços Artesianos com
+                <strong>Qualidade, Segurança e Responsabilidade Ambiental</strong>
+            </p>
 
-    <section id="sobre">
-        <div class="intro">
-            <img src="https://images.unsplash.com/photo-1612874742301-26b1fc8e29be?auto=format&fit=crop&w=1200&q=80" alt="Equipe Linos Poços" />
-            <div class="text">
-                <h2>Quem Somos</h2>
-                <p>A <strong>Linos Poços</strong> é uma empresa brasileira com mais de 15 anos de experiência no setor de perfuração de poços artesianos. Atuamos em todo o Brasil oferecendo soluções completas e personalizadas para residências, empresas e
-                    áreas rurais.</p>
-                <p>Nossa equipe técnica é altamente qualificada e utiliza tecnologia de ponta para garantir agilidade, eficiência e segurança em todos os projetos.</p>
+            <div class="hero-buttons">
+                <button class="btn-primary">Solicitar Orçamento</button>
+                <button class="btn-outline">Nossos Serviços</button>
             </div>
         </div>
     </section>
 
-    <section id="servicos">
-        <h2>Nossos Serviços</h2>
-        <div class="cards">
-            <div class="card">
-                <img src="img/perfuração.png" alt="Perfuração">
-                <h3>Perfuração de Poços</h3>
-                <p>Realizamos perfuração de poços artesianos e semi-artesianos com equipamentos modernos, respeitando normas ambientais e técnicas.</p>
-            </div>
-            <div class="card">
-                <img src="" alt="Manutenção de poço">
-                <h3>Limpeza e Manutenção</h3>
-                <p>Serviços regulares de limpeza, recuperação de poços antigos e manutenção preventiva para garantir qualidade da água e durabilidade.</p>
-            </div>
-            <div class="card">
-                <img src="" alt="Bomba submersa">
-                <h3>Instalação de Bombas</h3>
-                <p>Instalamos bombas submersas e de recalque, com suporte técnico e garantia de funcionamento ideal.</p>
-            </div>
-            <div class="card">
-                <img src="" alt="Laudo de vazão">
-                <h3>Testes de Vazão</h3>
-                <p>Realizamos testes com laudos técnicos que comprovam o volume de água disponível no poço e sua eficiência.</p>
-            </div>
-            <div class="card">
-                <img src="" alt="Regularização ambiental">
-                <h3>Regularização Ambiental</h3>
-                <p>Acompanhamos o processo de licenciamento junto aos órgãos competentes, cuidando de toda a parte documental e legal.</p>
+    <section id="sobre" class="section">
+        <div class="container">
+            <span class="section-tag">SOBRE NÓS</span>
+            <h2>Especialistas em Soluções Hídricas</h2>
+            <p>
+                Há mais de <strong>15 anos</strong>, a <strong>Linos Poços</strong> atua com excelência na
+                perfuração, manutenção e regularização de poços artesianos, oferecendo
+                soluções seguras, eficientes e duráveis para garantir o acesso à água de qualidade.
+            </p>
+
+            <p>
+                Trabalhamos com equipamentos modernos, equipe especializada e total compromisso
+                com as normas técnicas e ambientais, atendendo residências, propriedades rurais,
+                empresas e grandes empreendimentos.
+            </p>
+
+            <div class="features">
+                <div>✔ Atendimento personalizado</div>
+                <div>✔ Orçamento sem compromisso</div>
+                <div>✔ Garantia de qualidade nos serviços</div>
+                <div>✔ Suporte técnico completo</div>
             </div>
         </div>
     </section>
 
-    <section id="contato">
-        <h2>Entre em Contato</h2>
-        <p><strong>📞 Telefone:</strong> (99) 99999‑9999</p>
-        <p><strong>✉️ Email:</strong> contato@linospocos.com.br</p>
-        <p><strong>📍 Endereço:</strong> Rua das Águas, 123, centauro , EUNAPOLIS – BA</p>
+    <section id="servicos" class="section light">
+        <div class="container">
+            <span class="section-tag">NOSSOS SERVIÇOS</span>
+            <h2>Soluções Completas em Poços Artesianos</h2>
+            <p class="section-desc">
+                Oferecemos serviços completos desde a perfuração até a manutenção e regularização do seu poço.
+            </p>
 
-        <div class="mapa">
-            <iframe src="" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="cards">
+
+                <div class="card modern">
+                    <img src="img/perfuracao.png" alt="Perfuração de Poços">
+                    <div class="card-content">
+                        <h3>Perfuração de Poços</h3>
+                        <p>
+                            Perfuração de poços artesianos e semi-artesianos com equipamentos modernos,
+                            garantindo segurança e eficiência no aproveitamento do lençol freático.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card modern">
+                    <img src="img/manutencao.png" alt="Limpeza e Manutenção">
+                    <div class="card-content">
+                        <h3>Limpeza e Manutenção</h3>
+                        <p>
+                            Serviços de limpeza, desobstrução e manutenção preventiva para manter
+                            o poço funcionando com máxima eficiência e maior vida útil.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card modern">
+                    <img src="img/bombas.png" alt="Instalação de Bombas">
+                    <div class="card-content">
+                        <h3>Instalação de Bombas</h3>
+                        <p>
+                            Instalação profissional de bombas submersas de alta performance,
+                            corretamente dimensionadas conforme profundidade e vazão do poço.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card modern">
+                    <img src="img/vazao.png" alt="Teste de Vazão">
+                    <div class="card-content">
+                        <h3>Teste de Vazão</h3>
+                        <p>
+                            Realização de testes de vazão com emissão de laudo técnico,
+                            essencial para o correto dimensionamento e licenciamento do poço.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card modern">
+                    <img src="img/regularizacao.png" alt="Regularização Ambiental">
+                    <div class="card-content">
+                        <h3>Regularização Ambiental</h3>
+                        <p>
+                            Assessoria completa para licenciamento e regularização ambiental junto
+                            aos órgãos competentes, garantindo total conformidade legal.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Linos Poços - Todos os direitos reservados.</p>
+    <section id="contato" class="section">
+        <div class="container">
+            <span class="section-tag">CONTATO</span>
+            <h2>Fale Conosco</h2>
+            <p>
+                Entre em contato conosco para solicitar um orçamento ou tirar suas dúvidas.
+                Nossa equipe está pronta para oferecer a melhor solução para suas necessidades.
+            </p>
+
+            <div class="contact-grid">
+                <div class="contact-item">📞 (73) 99999-9999</div>
+                <div class="contact-item">✉ contato@linospocos.com.br</div>
+                <div class="contact-item">📍 Eunápolis - BA</div>
+                <div class="contact-item">⏰ Segunda a sexta: 8h às 18h</div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3>💧 Linos Poços</h3>
+                <p>Especialistas em perfuração e manutenção de poços artesianos.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Menu</h4>
+                <a href="#sobre">Sobre</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#contato">Contato</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            © 2025 Linos Poços – Todos os direitos reservados
+        </div>
     </footer>
 
-    <a href="https://wa.me/55981022133" class="whatsapp" target="_blank">WhatsApp</a>
+    <a href="#" class="whatsapp">💬</a>
 
-    <script src="scripts.js"></script>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
