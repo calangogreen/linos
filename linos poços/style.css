@@ -27,6 +27,11 @@ body {
     padding: 0 20px;
 }
 
+.img-icon {
+    width: 30px;
+    height: auto;
+}
+
 /* ================= HEADER ================= */
 .header {
     position: fixed;
@@ -76,19 +81,51 @@ body {
 }
 
 .btn-primary {
-    background: #ffffff;
-    color: var(--primary);
-    border: none;
-    padding: 18px 80px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--primary);
+    color: #ffffff;
+    border: 2px solid var(--primary);
+    padding: 12px 32px;
     border-radius: var(--radius);
     cursor: pointer;
-    font-size: 18px;
-    font-weight: bold;
-    transition: background 0.3s;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
     background: var(--primary-dark);
+    border-color: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+.btn-orcamento {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #ffffff;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    padding: 12px 32px;
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-orcamento:hover {
+    background: #ffffffee;
+}
+
+.btn-orcamento img {
+    transition: transform 0.3s ease;
+}
+
+.btn-orcamento:hover img {
+    transform: translateX(8px) scale(1.05);
 }
 
 .btn-outline {
@@ -296,116 +333,163 @@ body {
 }
 
 
-/* ================= CONTACT ================= */
+/* ================= CONTATO GRID ================= */
+.contato-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/* Texto */
+.contato-text {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Imagem */
+.contato-image img {
+    width: 100%;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+/* ================= CARDS DE CONTATO ================= */
 .contact-grid {
     margin-top: 45px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 24px;
 }
 
-/* Card padrão */
+/* Card */
 .contact-card {
     display: flex;
     align-items: center;
     gap: 18px;
-    padding: 22px 24px;
+    padding: 20px 22px;
     background: #ffffff;
+    border: 1px solid #e3e8f0;
     border-radius: var(--radius);
     box-shadow: var(--shadow);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.contact-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
 }
 
 /* Ícone */
 .contact-icon {
     min-width: 46px;
     height: 46px;
-    background: var(--primary);
-    color: #ffffff;
+    background: #d7e5f9;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 12px;
-    font-size: 22px;
 }
 
 /* Texto */
 .contact-card h4 {
-    font-size: 15px;
-    margin-bottom: 4px;
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
     color: var(--text-dark);
 }
 
 .contact-card span {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: var(--text-muted);
+    line-height: 1.4;
 }
 
 /* ================= WHATSAPP CARD ================= */
 .whatsapp-card {
     margin-top: 50px;
-    padding: 30px 35px;
-    background: linear-gradient(135deg, #25d366, #1ebe5d);
+    padding: 20px 20px;
+    background: linear-gradient(135deg, #e9fff2, #dfffea);
+    border: 1.5px solid #9be3b5;
     border-radius: var(--radius);
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 30px;
-    color: #ffffff;
+    color: #1f3d2b;
 }
 
+/* Info */
 .whatsapp-info {
     display: flex;
     align-items: center;
     gap: 18px;
 }
 
-.whatsapp-icon {
+/* Ícone */
+.whatsapp-info img {
     width: 54px;
     height: 54px;
-    background: rgba(255, 255, 255, 0.2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 16px;
-    font-size: 26px;
+    padding: 10px;
+    background: #25d366;
+    border: 2px solid #1ebe5d;
+    border-radius: 50%;
 }
 
 .whatsapp-card h3 {
-    font-size: 20px;
-    margin-bottom: 4px;
+    font-size: 1.125rem;
+    margin-bottom: 0.25rem;
 }
 
 .whatsapp-card p {
-    font-size: 14.5px;
-    opacity: 0.95;
+    font-size: 0.9rem;
+    color: #3f6b52;
 }
 
 /* Botão */
 .whatsapp-btn {
-    background: #ffffff;
-    color: #1ebe5d;
-    padding: 14px 26px;
+    background: #1ebe5d;
+    color: #ffffff;
+    padding: 0.75rem 1.4rem;
     border-radius: 999px;
+    border: 2px solid #1ebe5d;
+    font-size: 0.9rem;
     font-weight: 600;
+    line-height: 1;
+    white-space: nowrap;
+    /* 🔥 evita quebrar a frase */
     text-decoration: none;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .whatsapp-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    background: #ffffff;
+    color: #1ebe5d;
+    transform: translateY(-0.2rem);
+    box-shadow: 0 0.75rem 1.5rem rgba(30, 190, 93, 0.35);
 }
 
 /* ================= RESPONSIVO ================= */
+
+/* Tablets */
+@media (max-width: 900px) {
+    .contato-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .contato-image {
+        order: -1;
+        /* imagem primeiro */
+    }
+}
+
+/* Celular */
 @media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
     .whatsapp-card {
         flex-direction: column;
+        text-align: center;
+    }
+
+    .whatsapp-btn {
+        width: 100%;
         text-align: center;
     }
 }
@@ -465,16 +549,33 @@ body {
 .whatsapp-icon {
     position: fixed;
     cursor: pointer;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     bottom: 0;
     right: 0;
     margin: 2%;
-    transition: 0.6s;
+
+    animation: whatsappPulse 0.4s ease-in-out infinite;
 }
 
+/* Mantém o hover mais forte */
 .whatsapp-icon:hover {
-    scale: 1.1;
+    animation-play-state: paused;
+    transform: scale(1.15);
+}
+
+@keyframes whatsappPulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 /* ================= RESPONSIVO ================= */
