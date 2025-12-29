@@ -108,7 +108,7 @@ body {
     background: #ffffff;
     color: var(--primary);
     border: 2px solid var(--primary);
-    padding: 12px 32px;
+    padding: 14px 34px;
     border-radius: var(--radius);
     cursor: pointer;
     font-size: 15px;
@@ -143,6 +143,20 @@ body {
 .btn-outline:hover {
     background: #ffffff;
     color: var(--primary);
+}
+
+@media (max-width: 768px) {
+
+    .hero-buttons {
+        display: flex;
+        align-items: center;
+    }
+
+    .btn-primary,
+    .btn-orcamento {
+        width: fit-content;
+        white-space: nowrap;
+    }
 }
 
 /* ================= HERO ================= */
@@ -469,11 +483,6 @@ body {
     .contato-grid {
         grid-template-columns: 1fr;
         gap: 40px;
-    }
-
-    .contato-image {
-        order: -1;
-        /* imagem primeiro */
     }
 }
 
