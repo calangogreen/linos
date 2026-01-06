@@ -52,6 +52,12 @@ body {
     font-size: 18px;
 }
 
+.logo img {
+    display: flex;
+    width: 120px;
+    height: auto;
+}
+
 .nav {
     display: flex;
     align-items: center;
@@ -545,6 +551,11 @@ body {
     font-size: 14px;
     border-top: 1px solid #1e293b;
     color: #94a3b8;
+}
+
+.footer-brand img {
+    display: flex;
+    width: 200px;
 }
 
 /* ================= WHATSAPP ================= */
