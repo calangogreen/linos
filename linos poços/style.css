@@ -1,7 +1,7 @@
 /* RESET E VARIÁVEIS */
 :root {
-    --primary: #0284c7;
-    --primary-dark: #0369a1;
+    --primary: #0285c7;
+    --primary-dark: #036aa1;
     --text-muted: #475569;
     --border: #e5e7eb;
     --radius: 12px;
@@ -216,7 +216,7 @@ body {
 /* ================= HERO ================= */
 .hero {
     height: 90vh;
-    background: linear-gradient(rgba(2, 132, 199, 0.85),
+    background: linear-gradient(rgba(2, 133, 199, 0.404),
             rgba(2, 132, 199, 0.85)),
         url("img/principal.png");
     background-size: cover;
@@ -396,12 +396,9 @@ body {
 }
 
 
-/* ================= CONTATO GRID ================= */
-.contato-grid {
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    gap: 60px;
-    align-items: center;
+/* ================= CONTATO ================= */
+.contato {
+    display: flex;
 }
 
 /* Texto */
@@ -418,11 +415,14 @@ body {
 }
 
 /* ================= CARDS DE CONTATO ================= */
-.contact-grid {
+.contact {
     margin-top: 45px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(2, minmax(260px, 1fr));
+    gap: 12px;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Card */
@@ -471,7 +471,7 @@ body {
 
 /* ================= WHATSAPP CARD ================= */
 .whatsapp-card {
-    margin-top: 50px;
+    margin-top: 12px;
     padding: 20px 20px;
     background: linear-gradient(135deg, #e9fff2, #dfffea);
     border: 1.5px solid #9be3b5;
@@ -481,6 +481,9 @@ body {
     justify-content: space-between;
     gap: 30px;
     color: #1f3d2b;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Info */
@@ -521,7 +524,6 @@ body {
     font-weight: 600;
     line-height: 1;
     white-space: nowrap;
-    /* 🔥 evita quebrar a frase */
     text-decoration: none;
     transition: all 0.3s ease;
 }
