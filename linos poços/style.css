@@ -46,7 +46,9 @@ body {
     align-items: center;
     justify-content: space-between;
     height: 72px;
+    width: 100%;
 }
+
 
 .logo {
     font-size: 18px;
@@ -420,9 +422,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, minmax(260px, 1fr));
     gap: 12px;
-    max-width: 650px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-inline: auto;
 }
 
 /* Card */
@@ -535,18 +535,14 @@ body {
 
 /* ================= RESPONSIVO ================= */
 
-/* Tablets */
-@media (max-width: 900px) {
-    .contato-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-}
-
-/* Celular */
 @media (max-width: 768px) {
-    .contact-grid {
+
+    .contact {
         grid-template-columns: 1fr;
+    }
+
+    .contact-card {
+        width: 425px;
     }
 
     .whatsapp-card {
