@@ -416,6 +416,7 @@ body {
 }
 
 /* ================= CARDS DE CONTATO ================= */
+
 .contact {
     margin-top: 45px;
     display: grid;
@@ -438,6 +439,7 @@ body {
     color: inherit;
     cursor: pointer;
     transition: 0.3s;
+    width: 100%;
 }
 
 .contact-card:hover {
@@ -537,13 +539,9 @@ body {
 @media (max-width: 768px) {
 
     .contact {
+        width: 80%;
         grid-template-columns: 1fr;
     }
-
-    .contact-card {
-        width: 425px;
-    }
-
     .whatsapp-card {
         flex-direction: column;
         text-align: center;
